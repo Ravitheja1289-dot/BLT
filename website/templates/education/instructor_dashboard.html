@@ -11,15 +11,9 @@
                     onclick="toggleModal('createCourseModal')">
                 <i class="fas fa-book mr-2"></i>Create course
             </button>
-            <a href="{% url 'create_standalone_lecture' %}">
-                <button class="mt-4 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-800 transition-colors duration-300">
-                    <i class="fas fa-video mr-2"></i>Create lecture
-                </button>
-            </a>
         </div>
         <h1 class="text-4xl text-center font-bold mb-5">My courses</h1>
         {% include "education/includes/course_list.html" %}
-        <h1 class="text-4xl text-center font-bold mb-5">My lectures</h1>
     </div>
     <div id="createCourseModal"
          class="fixed inset-0 bg-gray-900 dark:bg-gray-50 bg-opacity-75 flex items-center justify-center hidden">
